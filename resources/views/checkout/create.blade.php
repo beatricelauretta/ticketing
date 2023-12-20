@@ -18,7 +18,7 @@
                         <div class="col-lg-6 col-12">
                             <div class="item-bootcamp">
                                 <h1 class="package">
-                                    Pancawarna : <br> Jeumpa Peunawa Hate
+                                    {{$camp->title}}
                                 </h1>
                                 <br>
                                 <img src="{{asset('images/item_event.png')}}" alt="" class="cover">
@@ -29,28 +29,33 @@
                         </div>
                         <div class="col-lg-1 col-12"></div>
                         <div class="col-lg-5 col-12">
-                            <form action="#" class="basic-form">
+                            @if($errors->any())
+                            <div class="alert alert-warning" role= "alert">
+                                <strong>Oops!</strong> {{$errors->first()}}
+                            </div>
+                            @endif
+                            <form action="{{route('checkout.store', $camp->id)}}" method="post" class="basic-form">
+                                @csrf
                                 <div class="mb-4">
-                                    <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="name" type="text" class="form-control" value="{{@Auth::user()->name}}"
+                                    aria-describedby="fullnameCheckout" required>
                                 </div>
                                 <div class="mb-4">
-                                    <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label class="form-label">Email Address</label>
+
+                                    <input type="email" type="email" class="form-control" value="{{@Auth::user()->email}}"
+                                    aria-describedby="emailCheckout" required>
                                 </div>
                                 <div class="mb-4">
-                                    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-4">
-                                    <label for="exampleInputEmail1" class="form-label">Occupation</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label class="form-label">Occupation</label>
+                                    <input type="occupation" type="text" class="form-control" value="{{@Auth::user()->occupation}}"
+                                    aria-describedby="occupationCheckout" required>
                                 </div>
                                 <button type="submit" class="w-100 btn btn-primary">Pay Now</button>
                                 <p class="text-center subheader mt-4">
-                                    <img src="{{asset('images/ic_secure.svg')}}" alt=""> Your payment is secure and encrypted.
+                                    <img src="/assets/images/ic_secure.svg" alt=""> Your payment is secure and encrypted.
                                 </p>
-                            </form>
                         </div>
                     </div>
                 </div>

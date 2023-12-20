@@ -15,4 +15,8 @@ class Checkout extends Model
         'camp_id',
         'is_paid',
     ];
+
+    public function camp(){
+        return $this->belongsTo(Camp::class, 'camp_id');
+        }
 }

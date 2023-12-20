@@ -176,7 +176,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <p>
-                                    <a href="#" class="btn btn-master btn-primary w-100 mt-3">
+                                    <a href="{{url('checkout/gila-belajar')}}" class="btn btn-master btn-primary w-100 mt-3">
                                         Take This Package
                                     </a>
                                 </p>
