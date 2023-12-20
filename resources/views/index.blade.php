@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-lg-6 col-12 text-center">
                             <a href="#">
-                                <img src="/assets/images/banner.png" class="img-fluid" alt="">
+                                <img src="{{asset('images/banner.png')}}" class="img-fluid" alt="">
                             </a>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-lg-3 col-12">
                     <div class="item-benefit">
-                        <img src="/assets/images/ic_globe.png" class="icon" alt="">
+                        <img src="{{asset('images/ic_globe.png')}}" class="icon" alt="">
                         <h3 class="title">
                             Alpus Cup
                         </h3>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-lg-3 col-12">
                     <div class="item-benefit">
-                        <img src="/assets/images/ic_globe-1.png" class="icon" alt="">
+                        <img src="{{asset('images/ic_globe-1.png')}}" class="icon" alt="">
                         <h3 class="title">
                             Pancawarna
                         </h3>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-lg-3 col-12">
                     <div class="item-benefit">
-                        <img src="/assets/images/ic_globe-2.png" class="icon" alt="">
+                        <img src="{{asset('images/ic_globe-2.png')}}" class="icon" alt="">
                         <h3 class="title">
                             Arcelest
                         </h3>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-lg-3 col-12">
                     <div class="item-benefit">
-                        <img src="/assets/images/ic_globe-3.png" class="icon" alt="">
+                        <img src="{{asset('images/ic_globe-3.png')}}" class="icon" alt="">
                         <h3 class="title">
                             Smartcup
                         </h3>
@@ -120,7 +120,7 @@
                                     IDR 350K
                                 </h1>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}')}}" alt="">
                                     <p>
                                         One VIP Ticket
                                     </p>
@@ -128,7 +128,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Wristband
                                     </p>
@@ -136,7 +136,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Backstage Access
                                     </p>
@@ -144,7 +144,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Totebag
                                     </p>
@@ -152,7 +152,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Tumbler
                                     </p>
@@ -160,7 +160,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         T-Shirt
                                     </p>
@@ -168,7 +168,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Keychain
                                     </p>
@@ -191,7 +191,7 @@
                                     IDR 250K
                                 </h1>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         One VIP Ticket
                                     </p>
@@ -199,7 +199,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Wristband
                                     </p>
@@ -207,7 +207,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing mb-4">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Totebag
                                     </p>
@@ -215,7 +215,7 @@
                                     <div class="divider"></div>
                                 </div>
                                 <div class="item-benefit-pricing">
-                                    <img src="/assets/images/ic_check.svg" alt="">
+                                    <img src="{{asset('images/ic_check.svg')}}" alt="">
                                     <p>
                                         Keychain
                                     </p>
@@ -244,13 +244,13 @@
             </h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="/assets/images/upcoming-1.png" alt="">
+                    <img src="{{asset('images/upcoming-1.png')}}" alt="">
                 </div>
                 <div class="col-md-4">
-                    <img src="/assets/images/upcoming-2.png" alt="">
+                    <img src="{{asset('images/upcoming-2.png')}}" alt="">
                 </div>
                 <div class="col-md-4">
-                    <img src="/assets/images/upcoming-3.png" alt="">.
+                    <img src="{{asset('images/upcoming-3.png')}}" alt="">.
                 </div>
             </div>
         </div>
@@ -273,12 +273,12 @@
                     <div class="row">
                         <div class="col-lg-4 col-12">
                             <div class="item-review">
-                                <img src="/assets/images/stars.svg" alt="">
+                                <img src="{{asset('images/stars.svg')}}" alt="">
                                 <p class="message">
                                     Revolutionized ticketing! This app streamlines sales, letting us focus on event planning while automation handles the rest.
                                 </p>
                                 <div class="user">
-                                    <img src="/assets/images/karina.png" class="photo" alt="">
+                                    <img src="{{asset('images/karina.png')}}" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
                                             Karina
@@ -292,12 +292,12 @@
                         </div>
                         <div class="col-lg-4 col-12">
                             <div class="item-review">
-                                <img src="/assets/images/stars.svg" alt="">
+                                <img src="{{asset('images/stars.svg')}}" alt="">
                                 <p class="message">
                                     Impressed by the app's stellar performance in ticket management. From setup to real-time tracking, it ensured seamless event success.
                                 </p>
                                 <div class="user">
-                                    <img src="/assets/images/ningning.png" class="photo" alt="">
+                                    <img src="{{asset('images/ningning.png')}}" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
                                             Ning Ning
@@ -311,11 +311,11 @@
                         </div>
                         <div class="col-lg-4 col-12">
                             <div class="item-review">
-                                <img src="/assets/images/stars.svg" alt="">
+                                <img src="{{asset('images/stars.svg')}}" alt="">
                                 <p class="message">
                                     Efficient sales, enhanced user experience. Easy seat selection, event maps, and instant confirmations, a perfect event solution.
                                 <div class="user">
-                                    <img src="/assets/images/giselle.png" class="photo" alt="">
+                                    <img src="{{asset('images/giselle.png')}}" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
                                             Giselle
