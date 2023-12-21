@@ -6,21 +6,23 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Routing\Controller as BaseController;
 use App\Http\Requests\User\Checkout\Store;
+use App\Mail\Checkout\AfterCheckout;
+use App\Models\Checkout;
 use App\Models\Camp;
 use App\Models\User;
-use App\Models\Checkout;
 use Auth;
 use Mail;
-use App\Mail\Checkout\AfterCheckout;
 use Str;
 use Midtrans;
 
-use function PHPSTORM_META\map;
-
 class CheckoutController extends Controller
 {
-    public function create(Camp $camp)
+    public function create(Request $request, Camp $camp)
     {
+        if($camp->isRegistered){
+            $request->session()->flash('error', "You already buy {$camp->title} ticket");
+            return redirect(route('dashboard'));
+        }
         return view('checkout.create', [
             "camp"=>$camp
         ]);
@@ -37,9 +39,9 @@ class CheckoutController extends Controller
 
             // update user data
             $user = Auth::user();
-            $user->email = $data['email'];
-            $user->name = $data['name'];
-            $user->occupation = $data['occupation'];
+            $user->email        = $data['email'];
+            $user->name         = $data['name'];
+            $user->occupation   = $data['occupation'];
             $user->save();
 
             // create checkout

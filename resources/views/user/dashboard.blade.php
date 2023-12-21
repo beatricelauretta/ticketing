@@ -13,8 +13,10 @@
                 </div>
             </div>
             <div class="row my-5">
+                @include('components.alert')
                 <table class="table">
                     <tbody>
+                        @foreach($checkouts as $checkout)
                         <tr class="align-middle">
                             <td width="18%">
                                 <img src="/assets/images/item_bootcamp.png" height="120" alt="">

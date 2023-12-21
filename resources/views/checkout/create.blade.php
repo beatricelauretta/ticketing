@@ -38,20 +38,32 @@
                                 @csrf
                                 <div class="mb-4">
                                     <label class="form-label">Full Name</label>
-                                    <input type="name" type="text" class="form-control" value="{{@Auth::user()->name}}"
-                                    aria-describedby="fullnameCheckout" required>
+                                    <input name="name" type="text" class="form-control {{$errors->has('name')?'is-invalid':''}}" 
+                                        value="{{@Auth::user()->name}}" 
+                                        aria-describedby="fullnameCheckout" required> 
+                                        @if($errors->has('name'))
+                                            <p class="text-danger">{{$errors->first('name')}}</p>
+                                        @endif
                                 </div>
                                 <div class="mb-4">
                                     <label class="form-label">Email Address</label>
-
-                                    <input type="email" type="email" class="form-control" value="{{@Auth::user()->email}}"
-                                    aria-describedby="emailCheckout" required>
+                                    <input name="email" type="email" class="form-control {{$errors->has('email')?'is-invalid':''}}" 
+                                        value="{{@Auth::user()->email}}" 
+                                        aria-describedby="emailCheckout" required> 
+                                        @if($errors->has('email'))
+                                            <p class="text-danger">{{$errors->first('email')}}</p>
+                                        @endif
                                 </div>
                                 <div class="mb-4">
                                     <label class="form-label">Occupation</label>
-                                    <input type="occupation" type="text" class="form-control" value="{{@Auth::user()->occupation}}"
-                                    aria-describedby="occupationCheckout" required>
+                                    <input name="occupation" type="text" class="form-control {{$errors->has('occupation')?'is-invalid':''}}" 
+                                        value="{{old('occupation')?:@Auth::user()->occupation}}" 
+                                        aria-describedby="occupationCheckout" required> 
+                                        @if($errors->has('occupation'))
+                                            <p class="text-danger">{{$errors->first('occupation')}}</p>
+                                        @endif
                                 </div>
+                                
                                 <button type="submit" class="w-100 btn btn-primary">Pay Now</button>
                                 <p class="text-center subheader mt-4">
                                     <img src="/assets/images/ic_secure.svg" alt=""> Your payment is secure and encrypted.
