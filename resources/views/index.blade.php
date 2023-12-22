@@ -278,7 +278,7 @@
                                     Revolutionized ticketing! This app streamlines sales, letting us focus on event planning while automation handles the rest.
                                 </p>
                                 <div class="user">
-                                    <img src="{{asset('images/karina.png')}}" class="photo" alt="">
+                                    <img src="{{asset('images/user_photo.png')}}" class="photo" alt="">
                                     <div class="info">
                                         <h4 class="name">
                                             Karina

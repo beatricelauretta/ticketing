@@ -63,11 +63,21 @@
                                             <p class="text-danger">{{$errors->first('occupation')}}</p>
                                         @endif
                                 </div>
-                                
+                                <div class="mb-4">
+                                    <label class="form-label">Phone</label>
+                                    <input name="phone" type="text" class="form-control {{$errors->has('phone')?'is-invalid':''}}"
+                                        value="{{old('phone')?:@Auth::user()->phone}}"
+                                        aria-describedby="phoneCheckout" required>
+                                        @if($errors->has('phone'))
+                                            <p class="text-danger">{{$errors->first('phone')}}</p>
+                                        @endif
+                                </div>
                                 <button type="submit" class="w-100 btn btn-primary">Pay Now</button>
                                 <p class="text-center subheader mt-4">
-                                    <img src="/assets/images/ic_secure.svg" alt=""> Your payment is secure and encrypted.
+                                    <img src="{{asset('images/ic_secure.svg')}}" alt=""> 
+                                    Your payment is secure and encrypted.
                                 </p>
+                            </form>
                         </div>
                     </div>
                 </div>

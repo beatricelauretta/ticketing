@@ -13,7 +13,7 @@
                     <h2 class="primary-header ">
                         Please go to the Dashboard page and proceed with the payment
                     </h2>
-                    <a href="#" class="btn btn-primary mt-3">
+                    <a href="{{url('/dashboard')}}" class="btn btn-primary mt-3">
                         My Dashboard
                     </a>
                 </div>

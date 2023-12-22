@@ -13,10 +13,13 @@ class Checkout extends Model
     protected $fillable = [
         'user_id',
         'camp_id',
-        'is_paid',
     ];
 
     public function camp(){
         return $this->belongsTo(Camp::class, 'camp_id');
+        }
+    
+    public function user(){
+       return $this->belongsTo(User::class, 'user_id');
         }
 }
